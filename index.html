@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AVCare — Premium Audio Visual services including video production, live events, AV systems integration, equipment rental, and consulting. Elevating your visual experience.">
+  <meta name="keywords"
+    content="audio visual, video production, live events, AV services, equipment rental, video streaming, consulting">
+  <meta name="author" content="AVCare">
+  <title>AVCare — Premium Audio Visual Services</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       PRELOADER
+       ============================================================ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="images/logo.jpg" alt="AVCare Logo">
+      </div>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-brand">
+        <img src="images/logo.jpg" alt="AVCare Logo" class="nav-logo">
+        <span class="nav-brand-name">AV<span>Care</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Background -->
+    <div class="hero-bg">
+      <img src="images/hero-bg.jpg" alt="Audio Visual Production Background">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-logo reveal">
+        <img src="images/logo.jpg" alt="AVCare Logo">
+      </div>
+      <h1 class="hero-company-name reveal reveal-delay-1">AV<span>Care</span></h1>
+      <p class="hero-tagline reveal reveal-delay-2">Excellence in Audio Visual</p>
+      <p class="hero-description reveal reveal-delay-3">
+        Delivering world-class audio visual solutions for corporate events, live productions,
+        and integrated AV systems. We bring your vision to life with precision and artistry.
+      </p>
+      <div class="hero-buttons reveal reveal-delay-4">
+        <a href="#services" class="btn btn-primary">
+          <i class="fas fa-th-large"></i> View Services
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+       ============================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What We Offer</span>
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          Comprehensive audio visual solutions tailored to meet the highest standards
+          of quality, creativity, and technical excellence.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Audio Visual -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <h3 class="service-title">Audio Visual</h3>
+          <p class="service-description">Full-spectrum AV solutions with cutting-edge sound and display technologies for
+            immersive experiences.</p>
+        </div>
+
+        <!-- Service 2: Video Production -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="service-title">Video Production</h3>
+          <p class="service-description">End-to-end video production services from concept development to final delivery
+            with cinematic quality.</p>
+        </div>
+
+        <!-- Service 3: Video Editing -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <i class="fas fa-film"></i>
+          </div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-description">Professional post-production with color grading, visual effects, and seamless
+            storytelling techniques.</p>
+        </div>
+
+        <!-- Service 4: Video Streaming -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <i class="fas fa-broadcast-tower"></i>
+          </div>
+          <h3 class="service-title">Video Streaming</h3>
+          <p class="service-description">Reliable live streaming services with multi-platform delivery for virtual and
+            hybrid events worldwide.</p>
+        </div>
+
+        <!-- Service 5: Live Events -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-calendar-star"></i>
+          </div>
+          <h3 class="service-title">Live Events</h3>
+          <p class="service-description">Flawless event execution with stage design, lighting, sound, and visual
+            production management.</p>
+        </div>
+
+        <!-- Service 6: Systems Integration -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3 class="service-title">Systems Integration</h3>
+          <p class="service-description">Custom AV system design and integration for conference rooms, auditoriums, and
+            smart environments.</p>
+        </div>
+
+        <!-- Service 7: Equipment Rental -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <i class="fas fa-toolbox"></i>
+          </div>
+          <h3 class="service-title">Equipment Rental</h3>
+          <p class="service-description">Premium audio visual equipment available for rent, maintained to the highest
+            professional standards.</p>
+        </div>
+
+        <!-- Service 8: AV Training -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3 class="service-title">AV Training</h3>
+          <p class="service-description">Hands-on training programs for AV professionals covering operation,
+            troubleshooting, and best practices.</p>
+        </div>
+
+        <!-- Service 9: Consulting -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="service-title">Consulting</h3>
+          <p class="service-description">Expert AV consulting to optimize your infrastructure, workflows, and technology
+            investments.</p>
+        </div>
+
+        <!-- Service 10: AV Auditing -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3 class="service-title">AV Auditing</h3>
+          <p class="service-description">Thorough assessment of existing AV systems to identify improvements, ensure
+            compliance, and maximize ROI.</p>
+        </div>
+
+        <!-- Service 11: Equipment Sales -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <h3 class="service-title">Equipment Sales</h3>
+          <p class="service-description">Authorized dealer for leading AV brands, offering quality equipment with
+            warranty and support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY PREVIEW SECTION
+       ============================================================ -->
+  <section class="gallery-preview" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Our Portfolio</span>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          A curated selection of our finest work across live events,
+          studio productions, and AV installations.
+        </p>
+      </div>
+
+      <div class="gallery-preview-grid" id="galleryPreviewGrid">
+        <!-- Preview images loaded via JS -->
+      </div>
+
+      <div class="gallery-preview-cta reveal">
+        <a href="gallery.html" class="btn btn-primary">
+          <i class="fas fa-images"></i> View Full Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- About Content -->
+        <div class="about-content">
+          <span class="section-subtitle reveal">About AVCare</span>
+          <h2 class="section-title reveal reveal-delay-1">Crafting Exceptional<br>Visual Experiences</h2>
+          <div class="section-divider reveal reveal-delay-2"></div>
+
+          <p class="about-text reveal reveal-delay-2">
+            AVCare is a premier audio visual services company dedicated to delivering
+            innovative and high-quality AV solutions. With years of industry experience,
+            we combine technical expertise with creative vision to transform spaces and
+            events into extraordinary experiences.
+          </p>
+
+          <p class="about-text reveal reveal-delay-3">
+            Our mission is to empower organizations and creatives with the tools, technology,
+            and expertise they need to communicate, engage, and inspire their audiences.
+            We believe in the power of visual storytelling to create lasting impact.
+          </p>
+
+          <div class="about-features reveal reveal-delay-4">
+            <div class="about-feature">
+              <i class="fas fa-award"></i>
+              <span>Industry Certified</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-handshake"></i>
+              <span>Trusted Partners</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-clock"></i>
+              <span>24/7 Support</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-globe"></i>
+              <span>Pan-India Reach</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Image -->
+        <div class="about-image reveal">
+          <img src="images/about-bg.png" alt="AVCare Professional Team at Work" id="aboutImage">
+          <div class="about-image-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          Ready to elevate your audio visual experience? Reach out to us
+          and let us bring your vision to life.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info reveal">
+          <!-- Contact Person -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>Contact Person</h4>
+              <p>Srimanta Giri</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>Phone</h4>
+              <a href="tel:+919836595645">+91 9836595645</a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>Email</h4>
+              <a href="mailto:info@avcare.in">info@avcare.in</a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-card-content">
+              <h4>Location</h4>
+              <p>Kolkata, West Bengal, India</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/919836595645" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"
+            id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="contact-map reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.45448583984!2d88.18493893828125!3d22.535564950000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="AVCare Location - Kolkata, India">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <img src="images/logo.jpg" alt="AVCare Logo" class="nav-logo">
+            <span class="nav-brand-name">AV<span>Care</span></span>
+          </a>
+          <p>
+            Delivering world-class audio visual solutions with precision,
+            creativity, and unwavering commitment to excellence.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Video Production</a></li>
+            <li><a href="#services">Live Events</a></li>
+            <li><a href="#services">AV Integration</a></li>
+            <li><a href="#services">Equipment Rental</a></li>
+            <li><a href="#services">Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-user"></i>
+            <span>Srimanta Giri</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 9836595645</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@avcare.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kolkata, West Bengal, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <a href="#home">AVCare</a>. All rights reserved. Crafted with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- ============================================================
+       BACK TO TOP
+       ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

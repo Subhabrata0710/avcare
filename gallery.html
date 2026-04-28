@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AVCare Gallery — Explore our portfolio of audio visual productions, live events, studio work, and AV installations.">
+  <meta name="keywords" content="AVCare gallery, AV portfolio, video production gallery, live events photos">
+  <meta name="author" content="AVCare">
+  <title>Gallery — AVCare</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+
+<body class="gallery-page">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo.jpg" alt="AVCare Logo" class="nav-logo">
+        <span class="nav-brand-name">AV<span>Care</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       GALLERY PAGE HERO
+       ============================================================ -->
+  <section class="gallery-page-hero">
+    <div class="container">
+      <div class="gallery-page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Gallery</span>
+        </nav>
+        <h1 class="section-title">Our Gallery</h1>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          Browse our complete portfolio showcasing live events, studio productions,
+          AV installations, and creative projects delivered with excellence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY GRID
+       ============================================================ -->
+  <section class="gallery-page-content">
+    <div class="container">
+      <div class="gallery-masonry" id="galleryMasonry">
+        <!-- Gallery items loaded dynamically via JS -->
+      </div>
+
+      <div class="gallery-empty" id="galleryEmpty">
+        <i class="fas fa-images"></i>
+        <h3>Gallery Coming Soon</h3>
+        <p>Add images to the <code>/images/gallery/</code> folder to populate the gallery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIGHTBOX MODAL
+       ============================================================ -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <img src="" alt="Gallery Image" id="lightboxImg">
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">
+            <img src="images/logo.jpg" alt="AVCare Logo" class="nav-logo">
+            <span class="nav-brand-name">AV<span>Care</span></span>
+          </a>
+          <p>
+            Delivering world-class audio visual solutions with precision,
+            creativity, and unwavering commitment to excellence.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Video Production</a></li>
+            <li><a href="index.html#services">Live Events</a></li>
+            <li><a href="index.html#services">AV Integration</a></li>
+            <li><a href="index.html#services">Equipment Rental</a></li>
+            <li><a href="index.html#services">Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-user"></i>
+            <span>Srimanta Giri</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 9836595645</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@avcare.in</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kolkata, West Bengal, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <a href="index.html">AVCare</a>. All rights reserved. Crafted with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BACK TO TOP
+       ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/gallery.js"></script>
+</body>
+
+</html>
